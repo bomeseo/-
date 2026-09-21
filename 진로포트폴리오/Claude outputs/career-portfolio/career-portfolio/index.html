@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>나의 진로포트폴리오 | Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot"></span>My Career Story</a>
+    <button class="nav-toggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">내 소개</a></li>
+      <li><a href="career.html">진로활동</a></li>
+      <li><a href="activities.html">주요 활동</a></li>
+      <li><a href="projects.html">프로젝트</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="wrap hero-intro">
+  <span class="eyebrow">DIGITAL CAREER PORTFOLIO · LAB</span>
+  <h1>나만의 연구실에 <span class="highlight">오신 걸 환영해요</span></h1>
+  <p>1학기 진로활동을 돌아보며 정리한 나의 관심과 경험을 담은 공간입니다. 아래 오브젝트를 움직여보고 클릭해보세요.</p>
+  <div class="hero-hint"><span class="pulse-dot"></span> 마우스를 움직이면 시점이 바뀌고, 오브젝트를 클릭하면 설명이 나타나요</div>
+</header>
+
+<div class="lab-stage">
+  <div id="lab-canvas-wrap" class="lab-canvas-wrap">
+    <canvas id="lab-canvas" aria-label="내 진로 연구실 3D 씬. 로봇(내 소개), 플라스크(진로활동), 트로피(주요 활동), 모니터(프로젝트)를 클릭하면 설명이 나타납니다."></canvas>
+    <span class="lab-caption">🖱️ 오브젝트를 클릭해보세요</span>
+
+    <div id="lab-panel" class="lab-panel">
+      <button class="lab-panel-close" aria-label="닫기">✕</button>
+      <span class="lab-panel-tag"></span>
+      <h3></h3>
+      <p></p>
+      <div class="lab-panel-actions">
+        <a class="btn btn-primary btn-sm lab-panel-link" href="#">자세히 보기</a>
+      </div>
+    </div>
+
+    <div class="lab-fallback">
+      이 브라우저에서는 3D 씬을 표시할 수 없어요. 아래 메뉴로 각 페이지를 확인해주세요.
+    </div>
+  </div>
+</div>
+
+<main class="wrap quick-links">
+  <a class="qcard" href="about.html">
+    <div class="emoji">🙋</div>
+    <div class="label">내 소개</div>
+  </a>
+  <a class="qcard" href="career.html">
+    <div class="emoji">🧭</div>
+    <div class="label">진로활동</div>
+  </a>
+  <a class="qcard" href="activities.html">
+    <div class="emoji">⭐</div>
+    <div class="label">주요 활동</div>
+  </a>
+  <a class="qcard" href="projects.html">
+    <div class="emoji">📁</div>
+    <div class="label">프로젝트</div>
+  </a>
+  <a class="qcard" href="about.html#values">
+    <div class="emoji">💡</div>
+    <div class="label">가치관</div>
+  </a>
+</main>
+
+<footer class="site-footer wrap">
+  © 2026 나의 진로포트폴리오 · 무엘쌤과 함께하는 진로여행
+</footer>
+
+<script src="script.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+<script type="module" src="lab-scene.js"></script>
+</body>
+</html>
